@@ -8,6 +8,9 @@ public class MyWorld extends World {
     public MyWorld() {
         super(600, 400, 1, false);
         
+        GreenfootImage bg = new GreenfootImage("images/background.png");
+        getBackground().drawImage(bg, 0, 0);
+        
         // Create the elephant object
         
         Elephant elephant = new Elephant();
