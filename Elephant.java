@@ -1,11 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * The Elephant, our hero.
- * 
- * @author Marin
- * @version April 2025
- */
 public class Elephant extends Actor
 {
     GreenfootSound elephantSound = new GreenfootSound("elephant_sound.mp3");
