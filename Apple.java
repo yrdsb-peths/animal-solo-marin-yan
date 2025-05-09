@@ -15,10 +15,13 @@ public class Apple extends Actor
     public Apple() {
         setImage("images/apple1.png");  
     }
+    
+    int speed = 1;
+    
     public void act()
     {
         // Apple falls downwards
-        setLocation(getX(), getY()+2);
+        setLocation(getX(), getY()+speed);
         
         // Remove apple and draw game over when apple gets to bottom
         MyWorld world = (MyWorld) getWorld();
@@ -26,5 +29,9 @@ public class Apple extends Actor
             world.gameOver();
             world.removeObject(this);
         }
+    }
+    
+    public void setSpeed(int spd) {
+        speed = spd;
     }
 }
